@@ -98,4 +98,40 @@ sudo dpkg-reconfigure tzdata
 
 Select option `None of the Above`>`UTC`.
 
+### Install and configure Apache
+Install Apache and Python3 wsgi_mod:
+```
+sudo apt-get install apache2
+sudo apt-get install libapache2-mod-wsgi
+sudo apt-get install libapache2-mod-wsgi-py3
+```
 
+### Install Sqlite
+Install SQLite:
+```
+sudo apt-get install sqlite3 libsqlite3-dev
+```
+
+### Install Git
+Install Git:
+```
+sudo apt-get install git
+```
+
+### Prepare python
+All necessary Python packages were installed.
+A `app.wsgi` file was created adding all project folders into Python path and importing Flask app.
+Updated database path to absolute path.
+Ran `populateDb.py` to create and populate database.
+
+### Configure Apache with wsgi
+Opened /etc/apache2/sites-enabled/000-default.conf and added following line:
+```
+WSGIScriptAlias / /var/www/html/catalog/turist-catalog/app.wsgi
+```
+
+### Restart Apache
+Restart Apache:
+```
+sudo /etc/init.d/apache2 restart
+```
