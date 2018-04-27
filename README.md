@@ -8,7 +8,7 @@ This README contains the necessary information for linux server hosted in Amazon
 http://18.217.239.39/
 
 ## Website
-The server is configured to serve the website [a tourist-catalog](https://github.com/caiopg/turist-catalog).
+The server is configured to serve the website [tourist-catalog](https://github.com/caiopg/turist-catalog).
 
 ## Changes made in server
 
