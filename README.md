@@ -159,9 +159,9 @@ PermitRootLogin no
 ```
 
 ## Tools used
-Amazon
-Unattended-upgrades
-Apache
-Python
-SQLite
-WSGI
+* Amazon
+* Unattended-upgrades
+* Apache
+* Python
+* SQLite
+* WSGI
