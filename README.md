@@ -135,3 +135,33 @@ Restart Apache:
 ```
 sudo /etc/init.d/apache2 restart
 ```
+
+### Configure Unattended-upgrades packge
+Install Unattended-upgrades:
+```
+sudo apt-get install unattended-upgrades
+```
+
+Configure Unattended-upgrades:
+```
+sudo dpkg-reconfigure --priority=low unattended-upgrades
+```
+
+### Disable root SSH access:
+Open SSH configuration file:
+```
+nano /etc/ssh/sshd_config
+```
+
+Add following line to file:
+```
+PermitRootLogin no
+```
+
+## Tools used
+Amazon
+Unattended-upgrades
+Apache
+Python
+SQLite
+WSGI
